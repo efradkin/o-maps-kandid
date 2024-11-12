@@ -2,7 +2,7 @@ const urlParams = new URLSearchParams(window.location.search);
 const THE_OWNER = urlParams.get('owner');
 const MAP_NAME = urlParams.get('map');
 
-const ATTRIBUTION = '© <a href="https://github.com/efradkin/o-maps" target="_blank">Евгений Фрадкин</a> | Спорт. карты <a href="https://t.me/orient_spb" target="_blank">СПб и области</a> на <a href="https://www.openstreetmap.org/copyright" target="_blank">OSM</a>';
+const ATTRIBUTION = '© <a href="https://o-maps.spb.ru" target="_blank">O-maps</a>';
 
 const ZERO_LATLNG = new L.LatLng(0, 0);
 const centerX = 59.944179;
