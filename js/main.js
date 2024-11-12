@@ -1,5 +1,4 @@
 const urlParams = new URLSearchParams(window.location.search);
-const THE_OWNER = urlParams.get('owner');
 const MAP_NAME = urlParams.get('map');
 
 const ATTRIBUTION = '© <a href="https://o-maps.spb.ru" target="_blank">O-maps</a>';
@@ -26,11 +25,11 @@ let selectedOverlay, selectedMap;
 let mapOverlays = [];
 
 let osmMap = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-    maxZoom: 17,
+    maxZoom: 18,
     attribution: ATTRIBUTION
 });
 let openTopoMap = L.tileLayer('https://{s}.tile.opentopomap.org/{z}/{x}/{y}.png', {
-    maxZoom: 17,
+    maxZoom: 18,
     attribution: ATTRIBUTION
 });
 
@@ -116,8 +115,8 @@ if (mapElement) {
     map = L.map('map', {
         attributionControl: false,
         zoomControl: false,
-        minZoom: 10,
-        maxZoom: 16,
+        minZoom: 8,
+        maxZoom: 18,
         center: savedState ? [savedState.lat, savedState.lng] : [centerX, centerY],
         zoom: savedState ? savedState.zoom : defaultZoom,
         layers: [
