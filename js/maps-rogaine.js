@@ -135,11 +135,18 @@ let rogaineMaps = [
         types: ['ROGAINE'],
     },
     {
-        //  Бобочинский полигон
         name: 'Гаврилово',
         url: './maps/rogaine/beketov/gavrilovo.webp',
         link: './original_maps/rogaine/beketov/zona.jpg',
         bounds: [[60.59489087388518, 28.941421508789066], [60.59168797815975, 29.249382019042972], [60.50035635259788, 28.93833160400391]],
+        owner: 'BKTV',
+        types: ['ROGAINE'],
+    },
+    {
+        name: 'Луга',
+        url: './maps/rogaine/beketov/luga.webp',
+        link: './original_maps/rogaine/beketov/luga.jpg',
+        bounds: [[58.7477225839728, 29.35306549072266], [58.74683198091693, 29.847106933593754], [58.64336713431344, 29.35855865478516]],
         owner: 'BKTV',
         types: ['ROGAINE'],
     },
